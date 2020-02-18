@@ -1,0 +1,47 @@
+.container {
+	display: grid;
+	background-color: var(--ravenclaw-blue);
+	color: var(--ravenclaw-bronze);
+	padding: 10px;
+	margin: 0;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 50px;
+	grid-template-areas: 
+		'brand links';
+	align-items: center;
+	
+}
+
+.brand {
+	grid-area: brand;
+	font-size: 1.75rem;
+	
+}
+
+.links {
+	
+	font-size: 1.25rem;
+	grid-area: links;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-areas: 
+		'us world sports tech';
+	justify-items: center;
+}	
+
+.usNews {
+	grid-area: us;
+}
+
+.intNews {
+	grid-area: world;
+}
+
+.sportsNews {
+	grid-area: sports;
+}
+
+.techNews {
+	grid-area: tech;
+}
+

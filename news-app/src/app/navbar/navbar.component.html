@@ -1,0 +1,15 @@
+<div class='container'>
+	<div class='brand'>
+		theCodingStoic
+	</div>
+	<div>
+		<div class='links'>
+			<span
+				*ngFor='let link of links'
+				class='{{link.className}}'
+			>
+				{{link.name}}
+			</span>
+		</div>
+	</div>
+</div>

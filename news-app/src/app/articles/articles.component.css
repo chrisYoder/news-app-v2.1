@@ -1,0 +1,15 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: 
+		'. articles articles articles .';
+	margin-top: 20px;
+	/* justify-items: center; */
+}
+
+.articles{
+	grid-area: articles;
+	border: 1px solid black;
+	text-align: center;
+}
